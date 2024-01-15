@@ -4,22 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transition</title>
-    <style>
-      .box {
-        width: 100px;
-        height: 100px;
-        border: 2px solid tomato;
-        background-color: peachpuff;
-        /* property name | duration | easing function | delay */
-        /* transition: width 5s linear 3s, background-color 3s ease-in 2s; */
-        transition: transform 1s;
-      }
-      .box:hover {
-        transform: rotate(45deg) scale(2.5) translateX(150px);
-        /* width: 400px;
-            background-color: red; */
-      }
-    </style>
+    <link rel="stylesheet" href="styles/transition.css" />
   </head>
   <body>
     <ul>
@@ -32,8 +17,16 @@
         Transition: how long it will take to do the change of the shape or color
       </li>
     </ul>
+    <!-- .box*3{Box $} -->
     <div class="box">Box 1</div>
     <div class="box">Box 2</div>
     <div class="box">Box 3</div>
+    <!-- .box1*3{Box $} -->
+    <div class="box1">Box 1</div>
+    <div class="box1">Box 2</div>
+    <div class="box1">Box 3</div>
+    <div class="box2">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box2">Box 3</div>
   </body>
 </html>
