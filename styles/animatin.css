@@ -3,19 +3,20 @@
     left: 0;
   }
   to {
-    left: 600px;
-    background-color: red;
+    left: 1000px;
+    background-color: rgb(174, 94, 94);
   }
 }
 
 @keyframes bounce {
   0% {
     top: 0px;
-    left: 0px;
+    left: 100px;
+    
   }
   25% {
-    left: 150px;
-    top: 200px;
+    left: 500px;
+    top: 250px;
     background-color: red;
   }
   50% {
@@ -24,24 +25,28 @@
     background-color: yellow;
   }
   100% {
-    left: 500px;
+    left: 1000px;
     top: 200px;
     background-color: red;
   }
 }
 
 .stage {
-  width: 600px;
-  height: 300px;
+  width: 1000px;
+  height: 600px;
   background-color: aqua;
   border: 2px solid steelblue;
-}
+  position: relative;
+ 
 .ball {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: yellow;
-  position: relative;
+  background-color: rgb(31, 31, 3);
   /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
-  animation: bounce 3s ease-in-out 1s infinite alternate;
+  animation: bounce 3s ease-in-out 0.1s infinite alternate;
+  position:absolute;
+  margin-top: 330px;
+ 
+  
 }
