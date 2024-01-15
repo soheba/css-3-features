@@ -1,0 +1,39 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(162, 71, 55);
+  background-color: peachpuff;
+  /* property name | duration | easing function | delay */
+  /* transition: width 5s linear 3s, background-color 3s ease-in 2s; */
+  transition: transform 1s;
+}
+.box:hover {
+  transform: rotate(45deg) scale(2.5) translateX(150px);
+  /* width: 400px;
+        background-color: red; */
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(9, 9, 9);
+  background-color: rgb(56, 131, 69);
+  transition: transform 1s;
+  margin-top: auto;
+  margin-left: 500px;
+}
+.box1:hover {
+  transform: rotate(45deg) scale(2.5) translateZ(150px);
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(9, 9, 9);
+  background-color: rgb(38, 41, 216);
+  transition: transform 1s;
+  margin-top: auto;
+  margin-left: 900px;
+}
+.box2:hover {
+  transform: rotate(45deg) scale(2.5) translateY(150px);
+}
